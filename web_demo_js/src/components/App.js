@@ -5,8 +5,7 @@ import Nav from '../components/Nav'
 import styles from './App.module.css';
 
 
-
-function App({children}:any){
+function App({children}){
     return (   
       <>
         <Nav className={styles.nav} />    

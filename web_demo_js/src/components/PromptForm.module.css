@@ -1,0 +1,9 @@
+.PromptForm{
+  display: flex;
+  flex-direction: column; 
+  padding: 10px 0;
+}
+
+.PromptForm > :not(:last-child) {
+  margin-bottom: 20px;
+}
