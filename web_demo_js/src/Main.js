@@ -2,8 +2,8 @@ import React from 'react';
 import App from './components/App'; 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'; 
 import GeneratePage  from "./pages/GeneratePage";
-import { ModifyPage } from "./pages/ModifyPage";
-import { RefinePage } from "./pages/RefinePage";  
+import ModifyPage from "./pages/ModifyPage";
+import RefinePage  from "./pages/RefinePage";  
 const Main = () => {
   return (
     <>
