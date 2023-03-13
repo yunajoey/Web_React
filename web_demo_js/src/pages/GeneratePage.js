@@ -1,4 +1,3 @@
-// import PromptForm from "../components/PromptForm";
 import Input from "../components/Input";
 import styled from "styled-components";
 import Button from "../components/Button";
@@ -24,14 +23,16 @@ function GeneratePage() {
   };
   let keys = Object.keys(MenuTitle);
   // console.log(MenuTitle[keys[1]]);
-  console.log(MenuTitle[keys[2]]);
+  // console.log(MenuTitle[keys[2]]);
+  // <button onClick={handleClick}>추가</button>
 
   return (
     <>
       <div>
+        {/* <PromptForm>ddd</ProptForm> */}
         <Input round></Input> <Button round>RUN</Button>
       </div>
-      <h1>generatepage페이지</h1>
+      {/* <h1>generatepage페이지</h1> */}
       <Layout>
         <DropDown
           selected={selected}
@@ -57,6 +58,7 @@ function GeneratePage() {
           MenuTitle={keys[3]}
           options={MenuTitle[keys[3]]}
         ></DropDown>
+        <div></div>
       </Layout>
     </>
   );

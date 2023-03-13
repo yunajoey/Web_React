@@ -16,6 +16,21 @@ const DropdownButtonTemplate = styled.div`
   justify-content: space-between;
 `;
 
+const ContentTemplate = styled.div`
+  padding: 0;
+  margin: 0;
+
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  color: black;
+  font-weight: bold;
+  font-size: 1;
+  font-weight: 500;
+  &:first-child {
+    padding-top: 0.8em;
+  }
+`;
 // .dropdown .dropdown-btn {
 //   padding: 15px 20px;
 //   background: withTheme;
@@ -39,7 +54,7 @@ function Dropdown({ selected, setSelected, MenuTitle, options }) {
             <span className="fas fa-caret-down"></span>
           </div>
         </DropdownButtonTemplate>
-        <contentTemplate>
+        <ContentTemplate>
           {isActive && (
             <div className="dropdown-content">
               {options.map((option) => (
@@ -55,7 +70,7 @@ function Dropdown({ selected, setSelected, MenuTitle, options }) {
               ))}
             </div>
           )}
-        </contentTemplate>
+        </ContentTemplate>
       </div>
     </DropdownTemplate>
   );
